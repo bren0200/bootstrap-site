@@ -6,6 +6,8 @@
 		<title>Bootstrap Website</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 		<link rel="stylesheet" href="CSS/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700|Roboto:300,400,700" rel="stylesheet">
+		<script defer src="/static/fontawesome/fontawesome-all.js"></script>
 	</head>
 	<body>
 		<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
@@ -23,14 +25,45 @@
 			</div>
 		</nav>
 		<main>
-			<div class="container">
-				<div class="row">
-					<img class="img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?center=57+hudson+street+new+york&zoom=14&scale=1&size=500x350&maptype=roadmap&key=AIzaSyAcAvsNfA7NKgRjv9-ePLZ8m8diSYBW72M&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x2163de%7Clabel:1%7C57+hudson+street+new+york" alt="Google Map of 57 hudson street new york">
+			<h1 class="m-4 text-center">Contact Us!</h1>
+			<div class="container-fluid">
+				<div class="container-fluid">
+					<img class="img-fluid mx-auto d-block" src="https://maps.googleapis.com/maps/api/staticmap?center=57+hudson+street+new+york&zoom=14&scale=1&size=500x350&maptype=roadmap&key=AIzaSyAcAvsNfA7NKgRjv9-ePLZ8m8diSYBW72M&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x2163de%7Clabel:1%7C57+hudson+street+new+york" alt="Google Map of 57 hudson street new york">
+				</div>
+				<div class="d-flex justify-content-center">
+					<div class="col-8 m-4 border border-dark rounded">
+						<form class="p-4">
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="newsletter">
+								<label class="form-check-label" for="exampleCheck1">Subscribe to monthly newsletter</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="notification">
+								<label class="form-check-label" for="exampleCheck1">Subscribe to important updates</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</main>
 		<footer>
-			<p>&copy;<time datetime="2018">2018</time> Nicholas Brennan</p>
+			<p>&copy;<time datetime="2018">2018</time> Nicholas Brennan. Absolutely No Rights Reserved.</p>
+			<div class="container">
+				<div class="row">
+					<p>Follow Us!</p>
+				</div>
+				<div class="row">
+					<i class="fab fa-facebook" id="icon"></i>
+					<i class="fab fa-instagram" id="icon"></i>
+					<i class="fab fa-twitter" id="icon"></i>
+				</div>
+			</div>			
 		</footer>
 		<!--js goes below here-->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
